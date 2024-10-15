@@ -18,7 +18,7 @@ router.post("/StudentUpdateProfile", UsersController.StudentUpdateProfile);
 // File
 router.post("/UploadSingleFile", FileController.UploadSingleFile);
 router.post("/UploadMultipleFiles", FileController.UploadMultipleFiles);
-router.get("/ReadFile", FileController.ReadFile);
-router.delete("/DeleteSingleFile", FileController.DeleteSingleFile);
+router.get("/ReadFile/:fileName", FileController.ReadFile);
+router.delete("/DeleteSingleFile/:fileName", FileController.DeleteSingleFile);
 
 export default router;
